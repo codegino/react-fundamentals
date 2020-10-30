@@ -15,7 +15,9 @@
 
     const className = 'container'
 
-    const element = <div className={className} children={message}></div>
+    const props = {children: message, className}
+
+    const element = <div id="test-id" {...props} />
 
     ReactDOM.render(element, document.getElementById('root'))
   </script>
